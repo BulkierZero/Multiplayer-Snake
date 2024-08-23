@@ -1,0 +1,76 @@
+html,body{
+    padding: 0;
+    margin: 0;
+    /* height: 100%; */
+}
+
+body{
+    background-color: black;
+}
+
+#gameWindow{
+    background-color: blue;
+    /* width: 100%; */
+    /* object-fit: contain; */
+}
+
+#startScreen{
+    display:flex;
+    flex-direction: column;
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 600px;
+}
+
+h3{
+    font-size: small;
+}
+
+.buttons{
+	display:flex;
+	align-items: stretch;
+	gap: 10px;
+	justify-content: center;
+}
+
+#startBtn {
+	background-color:blue;
+	border-radius:3px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:9px 23px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
+}
+
+#startBtn:hover {
+	background-color:#514f93;
+	cursor: pointer;
+}
+#startBtn:active {
+	position:relative;
+	top:1px;
+}
+
+#dropdown {
+	background-color:blue;
+	border-radius:3px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:9px 23px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
+  }
+
+.dropdown-content option {
+	color: #ffffff;
+	text-decoration: none;
+  }

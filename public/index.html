@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js" integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO" crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script defer type="module" src="js/app.js"></script>
+</head>
+
+<body>
+    <div id= "startScreen">
+        <h1>Snake Game</h1>
+        <h3>...please don't sue me</h3>
+        <div class="buttons">
+            <button id = "startBtn">Start Game</button>
+            <div class="dropdown">
+                <select id="dropdown" class="dropdown-content" required>
+                    <option value="" disabled selected>Select player color</option>
+                    <option value = 'orange'>Orange</option>
+                    <option value = 'teal'>Yellow</option>
+                    <option value = 'green'>Green</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <canvas id="gameWindow" style="display:none"></canvas>
+</body>
+
+</html>
